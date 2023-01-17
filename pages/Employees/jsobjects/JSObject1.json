@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Employees",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tsearchByName: () => {\n\t\tif(searchName.text.length==0){\n\t\t\treturn getEmployees.data\n\t\t}\n\t\telse{\n\t\t\treturn(getEmployees.data.filter(word => word.first_name.toLowerCase().includes(searchName.text.toLowerCase())))\n\t\t}\n\t},\n\tgetDate: () => {\n\t\treturn(moment().format('DD/MM/YYYY'))\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Employees_JSObject1",
+  "deleted": false,
+  "gitSyncId": "63c64ea90276ad261d6fdcd0_63c64f180276ad261d6fdd1a"
+}
